@@ -887,34 +887,49 @@
             justify-content: center;
         }
 
-        /* Toast Notification */
         .toast-notification {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%) translateY(100px);
-            background: var(--bg-card);
-            border: 2px solid var(--slime);
-            color: var(--text-main);
-            padding: 1rem 2rem;
-            border-radius: 12px;
-            box-shadow: 0 0 30px var(--slime-glow);
-            z-index: 20000;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-        }
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        /* Push further down and combine translates safely */
+        transform: translate(-50%, 200px);
+        /* Hide visually and prevent touch blocking when inactive */
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        
+        background: var(--bg-card);
+        border: 2px solid var(--slime);
+        color: var(--text-main);
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        box-shadow: 0 0 30px var(--slime-glow);
+        z-index: 20000;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        
+        /* Ensure smooth fading and sliding */
+        transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                    opacity 0.4s ease,
+                    visibility 0.4s ease;
+                    
+        /* Responsive sizing for mobile screens */
+        width: max-content;
+        max-width: 90vw;
+    }
 
-        .toast-notification.active {
-            transform: translateX(-50%) translateY(0);
-        }
+    .toast-notification.active {
+        transform: translate(-50%, 0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
 
-        .toast-icon {
-            color: var(--slime);
-            font-size: 1.5rem;
-        }
-
+    .toast-icon {
+        color: var(--slime);
+        font-size: 1.5rem;
+    }
         /* ==========================================================================
            12. FOOTER & CENTERED UNSPLASH WATERMARK
            ========================================================================== */
