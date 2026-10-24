@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spooky Paws Grooming Studio | Cinematic Halloween Pet Care</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Creepster&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome 6 for Professional Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cinematic Overlays (Zero-Blocking) -->
+    <div class="cinematic-overlay film-grain"></div>
+    <div class="cinematic-overlay vignette"></div>
+    
+    <!-- Demo Watermark Banner -->
+    <div class="demo-watermark"><i class="fa-solid fa-triangle-exclamation"></i> DEMO VERSION</div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-paw"></i></div>
+                <span class="logo-text">Spooky Paws</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#services">Pricing</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#booking" class="btn-cta btn-pumpkin" style="padding: 10px 20px; min-height: 40px;">Book Session</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Split-Screen Hero Entrance -->
+    <section class="hero-split" id="hero">
+        <!-- Mobile Mode Switcher -->
+        <div class="mobile-split-toggle" id="mobileSplitToggle">
+            <button class="mobile-toggle-btn active" data-target="light">Pre-Scruff</button>
+            <button class="mobile-toggle-btn" data-target="dark">Frightfully Fresh</button>
+        </div>
+
+        <!-- Left Pane: The Light Side (Groomed / Fresh) -->
+        <div class="split-pane light-side mobile-active" id="pane-light">
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=1200&q=80" alt="Freshly Groomed Dog" class="slider-image">
+            <div class="split-content">
+                <span class="creepster-title" style="color: var(--slime); font-size: 1.5rem;">Radiant & Fluffy</span>
+                <h2>The Fresh Side</h2>
+                <p>Immaculate organic conditioning, bright whitening treatments, and gentle detangling designed for canine aristocrats and feline royalty.</p>
+                <a href="#booking" class="btn-cta btn-slime">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Book a Fresh Groom
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Pane: The Dark Side (Spooky Glam / Halloween Theme) -->
+        <div class="split-pane dark-side" id="pane-dark">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1200&q=80" alt="Spooky Halloween Dog" class="slider-image">
+            <div class="split-content">
+                <span class="creepster-title" style="color: var(--pumpkin); font-size: 1.5rem;">The Coven's Choice</span>
+                <h2>Frightfully Glam</h2>
+                <p>Toxic slime-green claw polish, custom vampire fang fitting, and mystical pumpkin spice coat infusions for the boldest pets in town.</p>
+                <a href="#booking" class="btn-cta btn-pumpkin">
+                    <i class="fa-solid fa-moon"></i> Book a Spooky Makeover
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flashlight / Lantern Interactive Section -->
+    <section class="flashlight-container" id="flashlightSection">
+        <div class="flashlight-overlay-layer" id="flashlightMask"></div>
+        <div class="flashlight-content">
+            <span class="creepster-title" style="color: var(--pumpkin); font-size: 2rem;">Wander Into The Woods</span>
+            <h2 style="margin: 1rem 0;">Illuminating Pet Care Secrets</h2>
+            <p>Move your cursor or touch the screen to pierce through the nocturnal fog. Discover why Elvira Paws and her team of master groomers run the top-rated sanctuary for mystical transformations.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=800&q=80" alt="Mystical Pet Grooming Studio">
+        </div>
+        <div class="about-text">
+            <span class="creepster-title" style="color: var(--pumpkin); font-size: 1.8rem;">Founded Under a Blood Moon</span>
+            <h2>Where Pet Pampering Meets <span>Cinematic Magic</span></h2>
+            <p>Spooky Paws Grooming Studio was born from a passion for cinematic aesthetics and unconditional affection for animals. We blend stress-free handling techniques with extraordinary styling.</p>
+            <p>Every session utilizes organic, cruelty-free botanical shampoos enriched with pumpkin seed oil and eucalyptus mist, ensuring your companion leaves looking legendary and feeling relaxed.</p>
+            <a href="#services" class="btn-cta btn-pumpkin" style="margin-top: 1rem;">
+                <i class="fa-solid fa-skull"></i> Explore Our Spells
+            </a>
+        </div>
+    </section>
+
+    <!-- Team / Employees Section -->
+    <section class="team-section" id="team">
+        <div class="section-header">
+            <p>Master Groomers</p>
+            <h2>Meet The Spooky Paws Coven</h2>
+        </div>
+        <div class="team-grid">
+            <!-- Employee 1 -->
+            <div class="team-card">
+                <div class="team-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Elvira Paws - Founder & Head Groomer">
+                    <div class="team-badge"><i class="fa-solid fa-circle"></i> Available Today</div>
+                </div>
+                <div class="team-info">
+                    <h3>Elvira Paws</h3>
+                    <div class="team-role">Founder & Master Stylist</div>
+                    <p>Specializing in high-fashion scissor cuts and anxiety-soothing botanical baths for sensitive pets.</p>
+                    <button class="btn-cta btn-pumpkin" style="justify-content: center; min-height: 44px;" onclick="selectGroomer('elvira')">
+                        <i class="fa-solid fa-calendar-check"></i> Book with Elvira
+                    </button>
+                </div>
+            </div>
+
+            <!-- Employee 2 -->
+            <div class="team-card">
+                <div class="team-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Barnaby Thorne - Canine Specialist">
+                    <div class="team-badge"><i class="fa-solid fa-circle"></i> Available Today</div>
+                </div>
+                <div class="team-info">
+                    <h3>Barnaby "Scraps" Thorne</h3>
+                    <div class="team-role">Canine Transformation Specialist</div>
+                    <p>Expert in large breed deshedding, terror-free nail grinds, and pumpkin-infused conditioning rituals.</p>
+                    <button class="btn-cta btn-slime" style="justify-content: center; min-height: 44px; color: var(--bg-deep);" onclick="selectGroomer('barnaby')">
+                        <i class="fa-solid fa-calendar-check"></i> Book with Barnaby
+                    </button>
+                </div>
+            </div>
+
+            <!-- Employee 3 -->
+            <div class="team-card">
+                <div class="team-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80" alt="Luna Nightshade - Feline & Exotic Specialist">
+                    <div class="team-badge"><i class="fa-solid fa-circle"></i> Available Today</div>
+                </div>
+                <div class="team-info">
+                    <h3>Luna Nightshade</h3>
+                    <div class="team-role">Feline Whispering Specialist</div>
+                    <p>Master of low-stress cat lion cuts, fur detangling, and calming lavender aroma therapies.</p>
+                    <button class="btn-cta btn-pumpkin" style="justify-content: center; min-height: 44px;" onclick="selectGroomer('luna')">
+                        <i class="fa-solid fa-calendar-check"></i> Book with Luna
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section class="services-section" id="services">
+        <div class="section-header">
+            <p>Sacred Offerings</p>
+            <h2>Grooming Packages & Pricing</h2>
+        </div>
+        <div class="services-grid">
+            <!-- Card 1 -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-ghost"></i></div>
+                <h3>Haunted Mansion Bath</h3>
+                <p>A soothing cleansing ritual designed to banish muddy paws and unpleasant odors.</p>
+                <div class="service-price">$45</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Pumpkin-scented bubble bath</li>
+                    <li><i class="fa-solid fa-check"></i> Gentle blow-dry & fluff</li>
+                    <li><i class="fa-solid fa-check"></i> Nail trim & ear cleaning</li>
+                    <li><i class="fa-solid fa-check"></i> Vampire bow accessory</li>
+                </ul>
+                <a href="#booking" class="btn-cta btn-pumpkin" style="justify-content: center; min-height: 44px;">Select Package</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3>Witch's Brew Full Groom</h3>
+                <p>A complete transformation with precision styling and magical coat conditioning.</p>
+                <div class="service-price">$75</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Includes Haunted Mansion Bath</li>
+                    <li><i class="fa-solid fa-check"></i> Breed-specific haircut & styling</li>
+                    <li><i class="fa-solid fa-check"></i> Toxic slime (pet-safe) paw balm</li>
+                    <li><i class="fa-solid fa-check"></i> Organic breath freshener</li>
+                </ul>
+                <a href="#booking" class="btn-cta btn-slime" style="justify-content: center; min-height: 44px; color: var(--bg-deep);">Select Package</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-moon"></i></div>
+                <h3>Midnight Pumpkin Spa</h3>
+                <p>The ultimate luxury package for pampered pets seeking royal treatment.</p>
+                <div class="service-price">$110</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Full Witch's Brew Groom</li>
+                    <li><i class="fa-solid fa-check"></i> Deep moisturizing mud mask</li>
+                    <li><i class="fa-solid fa-check"></i> Teeth brushing & freshening treatment</li>
+                    <li><i class="fa-solid fa-check"></i> Custom Halloween bandana & photo session</li>
+                </ul>
+                <a href="#booking" class="btn-cta btn-pumpkin" style="justify-content: center; min-height: 44px;">Select Package</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spooky Pet Gallery -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header">
+            <p>Coven Portfolio</p>
+            <h2>The Spooky Pet Gallery</h2>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Creatures</button>
+            <button class="filter-btn" data-filter="dogs">Canine Familiars</button>
+            <button class="filter-btn" data-filter="cats">Feline Phantoms</button>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="dogs" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80" alt="Spooky Poodle">
+                <div class="gallery-overlay">
+                    <h4>Barnaby the Poodle</h4>
+                    <p>Witch's Brew Full Groom</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cats" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" alt="Mystic Black Cat">
+                <div class="gallery-overlay">
+                    <h4>Salem the Black Cat</h4>
+                    <p>Midnight Pumpkin Spa</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="dogs" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80" alt="Fluffy Golden Retriever">
+                <div class="gallery-overlay">
+                    <h4>Ghost the Golden Retriever</h4>
+                    <p>Haunted Mansion Bath</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cats" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=800&q=80" alt="Sphynx Cat">
+                <div class="gallery-overlay">
+                    <h4>Anubis the Sphynx</h4>
+                    <p>Botanical Skin Treatment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Section -->
+    <section class="booking-section" id="booking">
+        <div class="section-header">
+            <p>Secure Your Ritual</p>
+            <h2>Book an Appointment</h2>
+        </div>
+        <div class="booking-form-wrapper">
+            <form id="appointmentForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="ownerName">Your Name</label>
+                        <input type="text" id="ownerName" required placeholder="e.g. Morticia Addams">
+                    </div>
+                    <div class="form-group">
+                        <label for="petName">Pet's Name & Species</label>
+                        <input type="text" id="petName" required placeholder="e.g. Fang (Dog)">
+                    </div>
+                    <div class="form-group">
+                        <label for="groomerSelect">Choose Master Groomer</label>
+                        <select id="groomerSelect" required>
+                            <option value="any">First Available Master Groomer</option>
+                            <option value="elvira">Elvira Paws (Founder & Stylist)</option>
+                            <option value="barnaby">Barnaby Thorne (Canine Specialist)</option>
+                            <option value="luna">Luna Nightshade (Feline Specialist)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceSelect">Select Package</label>
+                        <select id="serviceSelect" required>
+                            <option value="" disabled selected>Choose a package...</option>
+                            <option value="bath">Haunted Mansion Bath ($45)</option>
+                            <option value="groom">Witch's Brew Full Groom ($75)</option>
+                            <option value="spa">Midnight Pumpkin Spa ($110)</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="appointmentDate">Preferred Date</label>
+                        <input type="date" id="appointmentDate" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="specialRequests">Special Instructions or Allergies</label>
+                        <textarea id="specialRequests" placeholder="Mention any temperament quirks, allergies, or special requests..."></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn-cta btn-pumpkin form-submit-btn">
+                    <i class="fa-solid fa-broom"></i> Book Appointment
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal Component -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
+            <img id="lightboxImg" src="" alt="Enlarged Pet View">
+            <div class="lightbox-details">
+                <div>
+                    <h3 id="lightboxTitle" style="color: var(--pumpkin);">Pet Title</h3>
+                    <p id="lightboxDesc" style="color: var(--text-muted);">Package details</p>
+                </div>
+                <span class="creepster-title" style="color: var(--slime); font-size: 1.4rem;">Spooky Paws</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Component -->
+    <div class="toast-notification" id="toastNotification">
+        <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div>
+            <h4 style="color: var(--slime);">Appointment Requested!</h4>
+            <p id="toastMessage" style="font-size: 0.85rem; color: var(--text-muted);">Your session has been logged in our system.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-paw"></i></div>
+                <span class="logo-text">Spooky Paws</span>
+            </a>
+            <p style="max-width: 500px;">Professional pet grooming with a touch of cinematic charm. Certified anxiety-free handlers.</p>
+            <div class="footer-socials">
+                <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+
+            <!-- Centered Watermark & Unsplash Attribution Button -->
+            <div class="footer-unsplash-watermark">
+                <p>Photos provided for demo purposes</p>
+                <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" class="unsplash-btn">
+                    <i class="fa-solid fa-camera"></i> Photos from Unsplash
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Spooky Paws Grooming Studio. All rights reserved.</p>
+                <p>DEMO VERSION - Cinematic Halloween Template</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- JavaScript Interactivity & Safeguards -->
+    <script src="script.js"></script>
+
+</body>
+</html>
