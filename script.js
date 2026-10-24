@@ -94,7 +94,7 @@
                 const groomerSelect = document.getElementById('groomerSelect');
                 const selectedGroomerText = groomerSelect.options[groomerSelect.selectedIndex].text;
 
-                toastMessage.textContent = `Thank you, ${owner}! ${pet}'s session with ${selectedGroomerText} has been successfully scheduled.`;
+               toastMessage.textContent = `Thank you, ${owner}! Your request for ${pet} with ${selectedGroomerText} has been received. This is a demo, so no real appointment was made.`;
                 toastNotification.classList.add('active');
 
                 appointmentForm.reset();
