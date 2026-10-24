@@ -889,11 +889,12 @@
 
         .toast-notification {
         position: fixed;
-        bottom: 30px;
+        /* Position it completely off-screen below the viewport */
+        bottom: -120px; 
         left: 50%;
-        /* Push further down and combine translates safely */
-        transform: translate(-50%, 200px);
-        /* Hide visually and prevent touch blocking when inactive */
+        transform: translateX(-50%);
+        
+        /* Ensure it is completely hidden and unclickable when inactive */
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
@@ -909,18 +910,19 @@
         align-items: center;
         gap: 15px;
         
-        /* Ensure smooth fading and sliding */
-        transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+        /* Smoothly animate the bottom position and opacity */
+        transition: bottom 0.5s cubic-bezier(0.16, 1, 0.3, 1),
                     opacity 0.4s ease,
                     visibility 0.4s ease;
                     
-        /* Responsive sizing for mobile screens */
         width: max-content;
         max-width: 90vw;
     }
 
     .toast-notification.active {
-        transform: translate(-50%, 0);
+        /* Slide up smoothly to 30px from the bottom */
+        bottom: 30px; 
+        transform: translateX(-50%);
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
