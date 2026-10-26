@@ -19,7 +19,8 @@ spooky-paws/
 1. Keep all files in the **same folder**.
 2. Open `index.html` in any modern browser (double-click it).
 
-No installation or server is required. An internet connection is needed to load the fonts, icons, and photos.
+No installation or server is required. An internet connection is needed to load the fonts, icons<img width="800" height="477" alt="spooky-paws-landing-page" src="https://github.com/user-attachments/assets/55d7f914-331c-42c5-b0fd-100a5cd8267f" />
+, and photos.
 
 
 ## Page Sections
@@ -43,3 +44,6 @@ No installation or server is required. An internet connection is needed to load 
 
 - The booking form is a front-end demo only. It shows a confirmation message but does not send or store data. Connect it to a backend (for example PHP/MySQL) to save real appointments.
 - Photos come from [Unsplash](https://unsplash.com) and are for demo purposes. Check the license and credit requirements before using them in a live site.
+
+
+
