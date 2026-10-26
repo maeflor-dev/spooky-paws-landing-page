@@ -19,8 +19,7 @@ spooky-paws/
 1. Keep all files in the **same folder**.
 2. Open `index.html` in any modern browser (double-click it).
 
-No installation or server is required. An internet connection is needed to load the fonts, icons<img width="800" height="477" alt="spooky-paws-landing-page" src="https://github.com/user-attachments/assets/55d7f914-331c-42c5-b0fd-100a5cd8267f" />
-, and photos.
+No installation or server is required. An internet connection is needed to load the fonts, icons, and photos.
 
 
 ## Page Sections
@@ -46,4 +45,5 @@ No installation or server is required. An internet connection is needed to load 
 - Photos come from [Unsplash](https://unsplash.com) and are for demo purposes. Check the license and credit requirements before using them in a live site.
 
 
+<img width="800" height="477" alt="spooky-paws-landing-page" src="https://github.com/user-attachments/assets/0054ef31-c42e-435c-8058-a545584470ad" />
 
